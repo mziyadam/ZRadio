@@ -5,4 +5,5 @@
     <string name="state">state</string>
     <string name="favorite">favorite</string>
     <string name="title_favorite">Favorite</string>
+    <string name="favorite_list_is_empty">Favorite list is empty!</string>
 </resources>

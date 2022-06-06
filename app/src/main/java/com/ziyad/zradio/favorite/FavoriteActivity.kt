@@ -34,6 +34,11 @@ class FavoriteActivity : AppCompatActivity() {
                 }
             runBlocking {
                 model.getFavoriteRadio().observe(this@FavoriteActivity) {
+                    if(it.isEmpty()){
+                        binding.tvFavoriteListEmpty.visibility=View.VISIBLE
+                    }else{
+                        binding.tvFavoriteListEmpty.visibility=View.GONE
+                    }
                     listRadioAdapter.setData(it)
                 }
             }
