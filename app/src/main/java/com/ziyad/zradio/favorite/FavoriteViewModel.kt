@@ -1,4 +1,4 @@
-package com.ziyad.favorite.favorite
+package com.ziyad.zradio.favorite
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

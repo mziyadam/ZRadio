@@ -1,4 +1,4 @@
-package com.ziyad.favorite.favorite
+package com.ziyad.zradio.favorite
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,8 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ziyad.core.domain.model.Radio
 import com.ziyad.core.ui.ListRadioAdapter
-import com.ziyad.favorite.databinding.ActivityFavoriteBinding
-import com.ziyad.favorite.di.favoriteModule
+import com.ziyad.zradio.databinding.ActivityFavoriteBinding
 import com.ziyad.zradio.play.PlayActivity
 import kotlinx.coroutines.runBlocking
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -22,7 +21,6 @@ class FavoriteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFavoriteBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        loadKoinModules(favoriteModule)
         binding.rvListFavoriteRadio.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(this@FavoriteActivity)

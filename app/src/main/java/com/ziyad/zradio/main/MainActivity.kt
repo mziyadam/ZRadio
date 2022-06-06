@@ -12,6 +12,7 @@ import com.ziyad.zradio.R
 import com.ziyad.core.domain.model.Radio
 import com.ziyad.core.ui.ListRadioAdapter
 import com.ziyad.zradio.databinding.ActivityMainBinding
+import com.ziyad.zradio.favorite.FavoriteActivity
 import com.ziyad.zradio.play.PlayActivity
 import kotlinx.coroutines.runBlocking
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -88,9 +89,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.menu_favorite -> {
-                /*startActivity(Intent(this, com.ziyad.favorite.favorite.FavoriteActivity::class.java))*/
-                val uri = Uri.parse("zradio://favorite")
-                startActivity(Intent(Intent.ACTION_VIEW, uri))
+                startActivity(Intent(this, FavoriteActivity::class.java))
                 true
             }
             else -> true

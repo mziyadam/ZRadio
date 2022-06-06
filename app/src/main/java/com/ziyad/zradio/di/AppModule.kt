@@ -2,6 +2,7 @@ package com.ziyad.zradio.di
 
 import com.ziyad.core.domain.usecase.RadioInteractor
 import com.ziyad.core.domain.usecase.RadioUseCase
+import com.ziyad.zradio.favorite.FavoriteViewModel
 import com.ziyad.zradio.main.MainViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -12,4 +13,5 @@ val useCaseModule = module {
 
 val viewModelModule = module {
     viewModel { MainViewModel(get()) }
+    viewModel { FavoriteViewModel(get()) }
 }

@@ -15,4 +15,3 @@ dependencyResolutionManagement {
 rootProject.name = "Z Radio"
 include ':app'
 include ':core'
-include ':favorite'
