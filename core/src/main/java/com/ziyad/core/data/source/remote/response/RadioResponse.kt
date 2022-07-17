@@ -13,7 +13,7 @@ data class RadioResponse(
     @field:SerializedName("state")
     val state: String? = null,
 
-    @field:SerializedName("url_resolved")
+    @field:SerializedName("url")
     val url_resolved: String? = null,
 
     @field:SerializedName("name")

@@ -21,6 +21,7 @@
             android:layout_height="72dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
+            android:src="@drawable/ic_baseline_radio_24"
             android:contentDescription="@string/radio_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
